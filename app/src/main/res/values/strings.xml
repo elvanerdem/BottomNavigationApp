@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BottomNavigationApp</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_movie_details">Movie Details</string>
+    <string name="title_tv_series">TVSeries</string>
+    <string name="title_tv_series_details">TVSeries Details</string>
+    <string name="title_tv_series_other_details">TVSeries Other Details</string>
+    <string name="title_watch_list">WatchList</string>
+    <string name="title_search">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

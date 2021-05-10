@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_movies">
+
+    <fragment
+        android:id="@+id/navigation_movies"
+        android:name="com.elvanerdem.bottomnavigationapp.ui.movies.MoviesFragment"
+        android:label="@string/title_movies"
+        tools:layout="@layout/fragment_movies" >
+        <action
+            android:id="@+id/action_navigation_movies_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_tv_series"
+        android:name="com.elvanerdem.bottomnavigationapp.ui.tvseries.TVSeriesFragment"
+        android:label="@string/title_tv_series"
+        tools:layout="@layout/fragment_tv_series" >
+        <action
+            android:id="@+id/action_navigation_tv_series_to_TVSeriesDetailFragment"
+            app:destination="@id/TVSeriesDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_watch_list"
+        android:name="com.elvanerdem.bottomnavigationapp.ui.watchlist.WatchListFragment"
+        android:label="@string/title_watch_list"
+        tools:layout="@layout/fragment_watch_list" />
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.elvanerdem.bottomnavigationapp.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.elvanerdem.bottomnavigationapp.ui.moviesdetail.MovieDetailsFragment"
+        android:label="@string/title_movie_details"
+        tools:layout="@layout/fragment_movie_details" />
+    <fragment
+        android:id="@+id/TVSeriesDetailFragment"
+        android:name="com.elvanerdem.bottomnavigationapp.ui.tvseriesdetail.TVSeriesDetailFragment"
+        android:label="@string/title_tv_series_details"
+        tools:layout="@layout/fragment_tv_series_detail" >30
+        <action
+            android:id="@+id/action_TVSeriesDetailFragment_to_TVSeriesOtherDetailFragment"
+            app:destination="@id/TVSeriesOtherDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TVSeriesOtherDetailFragment"
+        android:name="com.elvanerdem.bottomnavigationapp.ui.tvseriesdetail.TVSeriesOtherDetailFragment"
+        android:label="@string/title_tv_series_other_details"
+        tools:layout="@layout/fragment_tv_series_other_detail" />
+
+</navigation>
